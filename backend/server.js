@@ -35,3 +35,11 @@ console.log(`Server is running on http://localhost:${PORT}`);
 "dev"; "nodemon server.js"
 }
 }
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    '[https://thefolio.vercel.app](https://thefolio.vercel.app)',
+    deployment 
+  ],
+  credentials: true,
+}));

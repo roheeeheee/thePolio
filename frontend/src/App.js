@@ -11,7 +11,7 @@ import LoginPage from './pages/LogInPage';
 import RegisterPage from './pages/RegisterPage';
 import ProfilePage from './pages/ProfilePage';
 import CreatePostPage from './pages/CreatePost';
-import AdminPage from './pages/AdminPage';
+import AdminPage from './pages/AdminPage.js';
 
 // ==========================================
 // NAVIGATION COMPONENT
