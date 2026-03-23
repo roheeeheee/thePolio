@@ -1,7 +1,6 @@
 // backend/server.js
 require('dotenv').config(); // Load .env variables FIRST
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
 
 // Import your database connection
@@ -21,13 +20,12 @@ connectDB();
 // ── Middleware ─────────────────────────────────────────────────
 
 // Allow React (port 3000) AND your live Vercel app to call this server
-app.use(cors({ 
-  origin: [
-    'http://localhost:3000', 
-    'https://thefolio.vercel.app' 
-  ], 
-  credentials: true 
+app.use(cors({
+    origin: ["[https://thepolio.onrender.com](https://thepolio.onrender.com)"], // <-- Replace with your actual Vercel URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
 }));
+
 
 // Parse incoming JSON request bodies
 app.use(express.json());
