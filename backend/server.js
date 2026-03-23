@@ -38,7 +38,7 @@ console.log(`Server is running on http://localhost:${PORT}`);
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    '[https://thefolio.vercel.app](https://thefolio.vercel.app)',
+    '[https://the-polio.vercel.app](https://the-polio.vercel.app)',
     deployment 
   ],
   credentials: true,
