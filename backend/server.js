@@ -2,7 +2,7 @@
 require('dotenv').config(); // Load .env variables FIRST
 const express = require('express');
 const path = require('path');
-
+const cors = require('cors');
 // Import your database connection
 const connectDB = require('./config/db');
 
