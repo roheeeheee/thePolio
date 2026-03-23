@@ -1,0 +1,221 @@
+/* Cosmo Guide Admin Styles */
+
+/* Outer wrapper to center the container on the page */
+.admin-page-wrapper {
+  min-height: calc(100vh - 80px); /* Adjust based on your navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* The Main Dashboard Container */
+.cosmo-admin-container {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(15, 15, 20, 0.85); /* Dark, semi-transparent background */
+  border: 1px solid rgba(255, 215, 0, 0.2); /* Subtle gold border */
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.05); /* Outer glow & shadow */
+  backdrop-filter: blur(12px); /* Glassmorphism effect */
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* HEADER */
+.admin-header-section {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+  padding-bottom: 20px;
+}
+
+.admin-title {
+  color: var(--gold, #ffd700);
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.admin-subtitle {
+  color: #888;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* TABS */
+.admin-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  color: #888;
+  padding: 12px 30px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.tab-button:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+  color: #ccc;
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.tab-button.active-tab {
+  border-color: var(--gold, #ffd700);
+  color: var(--gold, #ffd700);
+  background: rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.15) inset;
+}
+
+/* DATA TABLES */
+.admin-content-panel {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.cosmo-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.cosmo-table th {
+  color: var(--gold, #ffd700);
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  padding: 15px;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.cosmo-table td {
+  padding: 15px;
+  border-bottom: 1px solid #222;
+  vertical-align: middle;
+}
+
+.cosmo-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cosmo-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.highlight-text {
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dim-text {
+  color: #555;
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px !important;
+  color: #666;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/* STATUS BADGES */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.badge-active {
+  background: rgba(0, 255, 128, 0.1);
+  color: #00ff80;
+  border: 1px solid rgba(0, 255, 128, 0.3);
+}
+
+.badge-inactive {
+  background: rgba(255, 165, 0, 0.1);
+  color: orange;
+  border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.badge-removed {
+  background: rgba(255, 68, 68, 0.1);
+  color: #ff4444;
+  border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-danger {
+  border: 1px solid rgba(255, 68, 68, 0.5);
+  color: #ff4444;
+}
+
+.btn-danger:hover {
+  background: rgba(255, 68, 68, 0.15);
+  border-color: #ff4444;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+}
+
+.btn-success {
+  border: 1px solid rgba(0, 255, 128, 0.5);
+  color: #00ff80;
+}
+
+.btn-success:hover {
+  background: rgba(0, 255, 128, 0.15);
+  border-color: #00ff80;
+  box-shadow: 0 0 10px rgba(0, 255, 128, 0.4);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cosmo-admin-container {
+    padding: 20px;
+  }
+  
+  .admin-title {
+    font-size: 1.8rem;
+  }
+  
+  .admin-tabs {
+    flex-direction: column;
+  }
+}

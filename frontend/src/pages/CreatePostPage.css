@@ -1,0 +1,143 @@
+.create-post-wrapper {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.cosmo-form-container {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(15, 15, 20, 0.85);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.05);
+  backdrop-filter: blur(12px);
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-header-section {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+  padding-bottom: 20px;
+}
+
+.form-title {
+  color: var(--gold, #ffd700);
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.form-subtitle {
+  color: #888;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.cosmo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group label {
+  display: block;
+  color: var(--gold, #ffd700);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.cosmo-input, .cosmo-textarea {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.cosmo-input:focus, .cosmo-textarea:focus {
+  outline: none;
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.1) inset;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cosmo-textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.cosmo-file-input {
+  color: #aaa;
+  font-family: inherit;
+  width: 100%;
+}
+
+.cosmo-file-input::file-selector-button {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid var(--gold, #ffd700);
+  color: var(--gold, #ffd700);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.cosmo-file-input::file-selector-button:hover {
+  background: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.cosmo-submit-btn {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid var(--gold, #ffd700);
+  color: var(--gold, #ffd700);
+  padding: 15px;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.cosmo-submit-btn:hover {
+  background: rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  color: #fff;
+}
+
+.cosmo-alert.error-msg {
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  color: #ff4444;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .cosmo-form-container { padding: 25px; }
+  .form-title { font-size: 1.5rem; }
+}
